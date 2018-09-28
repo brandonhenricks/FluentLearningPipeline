@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Brandon Henricks</Authors>
+    <PackageProjectUrl>https://github.com/brandonhenricks/FluentLearningPipeline</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/brandonhenricks/FluentLearningPipeline</RepositoryUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/brandonhenricks/FluentLearningPipeline/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>ML MachineLearning C# .NET</PackageTags>
+    <Description>Provides a wrapper class around the ML.NET learning pipeline.</Description>
   </PropertyGroup>
 
   <ItemGroup>
