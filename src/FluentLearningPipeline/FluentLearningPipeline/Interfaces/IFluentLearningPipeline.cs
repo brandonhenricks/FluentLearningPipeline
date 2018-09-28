@@ -7,7 +7,6 @@ namespace FluentLearningPipeline.Interfaces
     {
         LearningPipeline Pipeline { get; }
         IFluentLearningPipeline<TInput, TOutput> BeginPipeline();
-        IFluentLearningPipeline<TInput, TOutput> BeginPipeline(LearningPipeline pipeline);
         IFluentLearningPipeline<TInput, TOutput> Add(ILearningPipelineItem item);
         IFluentLearningPipeline<TInput, TOutput> Clear();
         IFluentLearningPipeline<TInput, TOutput> Remove(ILearningPipelineItem item);

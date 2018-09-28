@@ -39,7 +39,7 @@ namespace FluentLearningPipeline
         {
             if (item is null) throw new ArgumentNullException(nameof(item));
 
-            if (HasPipeline)
+            if (HasPipeline && !_pipeline.Contains(item))
             {
                 _pipeline.Add(item);
             }
@@ -63,27 +63,7 @@ namespace FluentLearningPipeline
 
             return this;
         }
-
-        /// <summary>
-        /// Begin a <see cref="LearningPipeline"/>LearningPipeline</see>
-        /// </summary>
-        /// <param name="pipeline"></param>
-        /// <returns></returns>
-        public IFluentLearningPipeline<TInput, TOutput> BeginPipeline(LearningPipeline pipeline)
-        {
-            if (pipeline is null) throw new ArgumentNullException(nameof(pipeline));
-
-            if (HasPipeline)
-            {
-                Clear();
-                _pipeline = null;
-            }
-
-            _pipeline = pipeline;
-
-            return this;
-        }
-
+        
         /// <summary>
         /// Removes existing <see cref="ILearningPipelineItem"/>ILearningPipelineItem</see> items.
         /// </summary>
