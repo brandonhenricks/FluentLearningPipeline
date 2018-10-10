@@ -1,5 +1,6 @@
 ﻿using FluentLearningPipeline.Interfaces;
 using Microsoft.ML;
+using Microsoft.ML.Legacy;
 using System;
 
 namespace FluentLearningPipeline
